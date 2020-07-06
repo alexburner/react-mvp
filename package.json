@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "rm -rf ./dev && parcel --out-dir dev ./src/index.html",
-    "build": "rm -rf ./dist && parcel build --out-dir ./dist --public-url ./ ./src/index.html",
+    "build": "rm -rf ./docs && parcel build --out-dir ./docs --public-url ./ ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
