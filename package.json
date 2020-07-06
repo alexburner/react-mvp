@@ -2,18 +2,20 @@
   "name": "react-mvp",
   "version": "1.0.0",
   "description": "Bare minimum React project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexburner/react-mvp.git"
   },
-  "author": "alexburner",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alexburner/react-mvp/issues"
+  "scripts": {
+    "dev": "rm -rf ./dev && parcel --out-dir dev ./src/index.html",
+    "build": "rm -rf ./dist && parcel build --out-dir ./dist --public-url ./ ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/alexburner/react-mvp#readme"
+  "devDependencies": {
+    "parcel-bundler": "1.12.4"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
 }
